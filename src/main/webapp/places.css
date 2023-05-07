@@ -1,0 +1,139 @@
+@charset "ISO-8859-1";
+
+body{
+    line-height: 2;
+    margin: 0;
+}
+
+.header{
+	text-align: center;
+}
+
+.abc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px #888888;
+    margin:20px 0px 20px 0px
+   
+}
+
+.row1{
+	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:0px 25px 25px 25px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%; }
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.box{
+	background-color: white;
+    margin-left:2.5%;
+    margin-right:2.5%;
+    margin-top:5%;
+    text-align: center;
+}
+
+.image{
+	
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+}
+
+
+
+
+*{box-sizing: border-box;
+}
+input[type=text], input[type=email], input[type=number], input[type=select], input[type=date],input[type=select],input[type=password], input[type=tel]
+{
+    width: 45%;
+    padding: 12px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+}
+textarea{
+    width:45%;
+    padding: 12px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=radio],input[type=checkbox]{
+    width: 1%;
+    padding-left: 0%;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    resize: vertical;
+}
+h1{
+    font-family: Arial;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: bold;
+    color: brown;
+    text-align: center;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+
+}
+input[type=submit],input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin-left:15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:left;
+}
+input[type=submit]:hover,input[type=reset]:hover {
+background-color: #32a336;
+}
+.container{
+    border-radius: 10px;
+    background-color:#f2f2f2;
+    padding: 20px;
+}
+.col-10{
+    float: left;
+    width:10%;
+    margin-top: 6px;
+}
+.col-90{
+    float: left;
+    width: 90%;
+    margin-top: 6px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .col-10,.col-90,input[type=submit],.col-6{
+        width: 100%;
+        margin-top: 0;
+    }
+    .slide{
+    width: 100%;
+    height: 250px;
+    }
+}
